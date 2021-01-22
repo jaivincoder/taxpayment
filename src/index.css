@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+}
+body{
+    background-color: #F2F2F2;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+    
+}
+.main-panel{
+    width: 100%;
+    /* position: fixed; */
+    transition: all 1s;
+  
+}
+@media (max-width:481px){
+    h4,h5{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .lgnavbar{
+        display: none;
+    }
+}
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 25px;
+    height: 1px;
+    background-color: #333;
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  .slider-drawer {
+    background-color: #F2F2F2;
+    position: absolute;
+    width: 275px;
+    height: 100vh; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transform: translateX(-260px);
+  } 
+  .toggle-slider{
+      transition: all 1s;
+      transform: translateX(0px);
+  }
+  .main-panel-slide{
+    transform: translateX(260px);
+    position: fixed;
+  }
+    @media (min-width:481px) {
+        .main-container {
+            display: none;
+        }
+    }
+  .card-bottom{
+    padding-bottom: 60px;
+  }
+  .payment{
+    line-height: 35px;
+  }
+  .page-inner{
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  /* .effect5
+  {
+    position: relative;
+  }
+  .effect5:before, .effect5:after
+  {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+    box-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .effect5:after
+  {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+  } */
+
+  .effect5{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  .dd{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .dd2{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+ 
